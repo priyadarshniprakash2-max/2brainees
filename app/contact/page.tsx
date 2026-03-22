@@ -7,7 +7,7 @@ export default function ContactPage() {
   const [submitted, setSubmitted] = useState(false);
   const [form, setForm] = useState({ name: "", email: "", brand: "", service: "", budget: "", message: "" });
 
-  const handle = (e) => {
+  const handle = (e: any) => {
     setForm({ ...form, [e.target.name]: e.target.value });
   };
 
